@@ -310,7 +310,7 @@ class EventingRebalance(EventingBaseTest):
         # Wait for eventing to catch up with all the delete mutations and verify results
         # This is required to ensure eventing works after rebalance goes through successfully
         self.verify_eventing_results(self.function_name, 0, skip_stats_validation=True)
-        self.undeploy_and_delete_function(body)
+        #self.undeploy_and_delete_function(body)
 
     def test_rebalance_out_with_different_topologies(self):
         gen_load_del = copy.deepcopy(self.gens_load)
