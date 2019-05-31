@@ -6,7 +6,6 @@ function OnUpdate(doc, meta) {
         log(e);
         }
     }
-}
 
 function OnDelete(meta) {
     var docID = meta.id;
@@ -18,6 +17,3 @@ function OnDelete(meta) {
         log(e);
         }
     }
-    // Adding these extra comments to validate MB-30240
-    log('Deleting document', docID);
-}
